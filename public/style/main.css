@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header > div {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+}
+
+header > div .cont {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  -webkit-clip-path: polygon(0px 0px, 100% 0%, 100% 50.98%, 0px 100%);
+          clip-path: polygon(0px 0px, 100% 0%, 100% 50.98%, 0px 100%);
+  background: linear-gradient(300deg, #931b1d 40%, black);
+  color: white;
+}
+
+header > div .cont * {
+  position: absolute;
+}
+
+header > div .cont .title {
+  font-weight: 900;
+  font-size: 80px;
+  font-style: italic;
+  top: 20vh;
+  left: 30px;
+}
+
+header > div .cont .moto {
+  font-style: italic;
+  top: 17vh;
+  left: 30px;
+  font-size: 20px;
+}
+
+header > div .cont .s {
+  top: 34vh;
+  left: 30px;
+  font-weight: 600;
+  font-size: 23px;
+}
+
+header > div .slider {
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  border-radius: 35px;
+  -webkit-transform: rotateX(15px);
+  transform: rotate(9deg);
+  right: -50px;
+  top: -50px;
+}
+
+header > div .slider .swiper-container {
+  top: 100px;
+  left: 0px;
+  height: 300px;
+  -webkit-transform: rotate(-9deg);
+          transform: rotate(-9deg);
+  width: 70%;
+}
+
+header > div .slider .swiper-container .swiper-slide {
+  color: white;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+@media (max-width: 850px) {
+  header > div .slider {
+    width: 100%;
+    left: 0;
+    top: 50%;
+    height: 60%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  header > div .slider .swiper-container {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    width: 350px;
+    top: 50px;
+  }
+  header > div .slider .swiper-container .swiper-slide {
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+  }
+  header > div .cont {
+    width: 100%;
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
+  header > div .cont .title {
+    font-weight: 900;
+    font-size: 80px;
+    font-style: italic;
+    top: 10vh;
+    left: 30px;
+  }
+  header > div .cont .moto {
+    font-style: italic;
+    top: 7vh;
+    left: 30px;
+    font-size: 20px;
+  }
+  header > div .cont .s {
+    top: 24vh;
+    left: 30px;
+    font-weight: 600;
+    font-size: 23px;
+  }
+}
+
+.about {
+  padding: 30px;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.about > div {
+  width: 400px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 40px;
+  color: #931b1d;
+  -webkit-box-shadow: #ff00008c 0 3px 20px -10px;
+          box-shadow: #ff00008c 0 3px 20px -10px;
+  position: relative;
+}
+
+.about > div .material-icons {
+  font-size: 60px;
+  position: absolute;
+  left: 170px;
+  top: -60px;
+  background: #931b1d;
+  color: white;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.about > div .cont {
+  text-align: center;
+}
+
+#ImgGall .swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#ImgGall .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+/*# sourceMappingURL=main.css.map */
